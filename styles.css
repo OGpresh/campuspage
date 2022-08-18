@@ -1,0 +1,442 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,p{
+    text-transform: capitalize;
+}
+.head{
+    min-height: 80vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1543892607-04657ef3a279?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&w=1000&q=80.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid rgb(245, 82, 82);
+}
+
+
+/* <--- Nav & Home ----> */
+
+nav{
+    display: flex;
+    background: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: -1px;
+    position: fixed;
+    width: 100%;
+    border-bottom: 2px solid rgb(245, 82, 82);
+}
+
+nav img{
+    width: 95px;
+    height: 95px;
+}
+
+nav ul li{
+    display: inline-block;
+
+}
+
+nav ul li a{
+    text-align: right;
+    text-decoration: none;
+    margin-right: 25px;
+    color: rgb(245, 82, 82);
+    font-size: 20px;
+}
+
+.textbox{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    margin: 10px auto;
+}
+
+.textbox h1{
+    font-size: 30px;
+    color: wheat;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.textbox p{
+    font-size: 20px;
+    color: wheat;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.textbox button{
+    font-size: 20px;
+    font-weight: 200;
+    background: rgb(245, 82, 82);;
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid wheat;
+    border-radius: 10px;
+}
+.textbox a{
+    color: white;
+}
+
+@media(max-width: 400px){
+    nav ul{
+        display: none;
+    }
+    .fa{
+        padding: 30px;
+        width: 100%;
+        height: 90%;
+        color: white;
+    }
+    .head{
+         background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./bk.jpg');
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         min-height: 70vh;
+
+    }
+}
+
+/* /-- course --  */
+
+.course{
+      width: 80%;
+      text-align: center;
+      margin: auto;
+      padding-top: 25px;
+} 
+
+.course h1{
+    font-size: 40px;
+    color: lightcoral;
+}
+.course-fa{
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 5px;
+    margin: auto;
+}
+
+.course-col{
+    background: black;
+    flex-basis: 30%;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+} 
+.course-col h2{
+    font-size: 35px;
+    color: lightcoral;
+}
+
+.course-col p{
+    color: white;
+}
+
+.course-col button{
+    padding: 7px;
+    margin-top: 5px;
+    background: rgb(245, 82, 82);
+    color: white;
+    border-radius: 5px;
+}
+.row{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+@media(max-width: 400px){
+    .row{
+        flex-direction: column;
+    }
+}
+    
+
+/* /-- campus --  */
+
+.campus{
+    width: 90%;
+    min-height: 50vh;
+   margin: auto;
+   padding-top: 30px;
+   text-align: center;
+}
+
+.campus-col{
+    flex-basis: 22%;
+    margin-top: 20px;
+    width: 40%;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(./schl2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid  rgb(245, 82, 82);
+}
+.campus-cul{
+    flex-basis: 22%;
+    margin-top: 20px;
+    width: 40%;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(./sch3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid  rgb(245, 82, 82);
+}
+
+.campus h1{
+    font-size: 32px;
+    color: rgb(245, 82, 82);
+}
+ .campus-col .layer h3{
+         color: white;
+         font-size: 25px;
+         padding-top: 190px;
+ }
+ .campus-cul .layer h3{
+    color: white;
+    font-size: 25px;
+    padding-top: 190px;
+}
+
+.campus-cul .layer h3:hover{
+    transform: scale(1.3);
+    transition: transform .5s ease-in-out;
+}
+.campus-col .layer h3:hover{
+    transform: scale(1.3);
+    transition: transform .5s ease-in-out;
+}
+
+@media(max-width: 400px){
+    .campus-col{
+        width: 70%;
+        min-height: 60vh;
+    }
+    .campus-cul{
+        width: 70%;
+        min-height: 60vh;
+    }
+}
+
+/* <!-- facilities --> */
+
+.facil{
+    width: 100%;
+    margin: auto;
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+.facil h1{
+    font-size: 33px;
+    color: black
+}
+.facil p{
+    font-size: 20px;
+    color: rgb(145, 82, 82);
+}
+
+.facil-col{
+    flex-basis: 40%;
+    padding: 10px;
+    margin-top: 4px;
+}
+
+.facil-col h2{
+    padding: 10px;
+    color: rgb(145, 82, 82);
+    font-size: 27px;
+}
+
+.facil-col img{
+    width: 90%;
+    height: 45vh;
+    border-radius: 5px;
+    border: 1px solid rgb(145, 82, 82);;
+}
+
+
+/* <!-- Review --> */
+
+.review{
+    width: 90%;
+    margin: auto;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.review h1{
+    font-size: 35px;
+}
+.review p{
+    font-size: 20px;
+}
+
+.reviev-col{
+    flex-basis: 40%;
+    margin-top: 15px;
+
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+    background:  linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), rgb(245, 82, 82);
+    padding: 10px;
+}
+
+.card img{
+    width: 40%;
+    height: 27vh;
+}
+
+.text{
+    flex-basis: 45%;
+    text-align: left;
+    padding: 10px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+@media(max-width: 400px){
+    .card img{
+        display: none;
+    }
+
+    .card{
+        display: inline-block;
+        background: cornsilk;
+        background-size: cover;
+        background-position: center;
+        border: 2px solid rgb(245, 82, 82);
+        border-radius: 5px;
+        color: black;
+    }
+
+    .text{
+        color: black;
+    }
+}
+
+/* <!-- Enrollment --> */
+
+.enroll{
+    width: 85%;
+    height: 58vh;
+    text-align: center;
+    margin: auto;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(./ge.jpg);
+    background-size: cover;
+    background-position: contain;
+    margin-top: 30px;
+    border-radius: 9px;
+    padding-top: 30px;
+}
+
+.enroll h1{
+    padding: 2px;
+    font-size: 30px;
+}
+
+.enroll p{
+    font-size: 20px;
+    padding: 3px;
+    color: brown;
+}
+
+.enroll button{
+    padding: 5px;
+    background: red;
+    border: 2px solid white;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 9px;
+}
+/* form */
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+    padding: 20px;
+    margin: auto;
+    height: 30vh;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.form h4{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.form input{
+    width: 250px;
+    height: 10%;
+    padding: 2px;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+}
+
+@media(max-width: 400px){
+    .form{
+        background-color: black;
+        width: 80%;
+        height: 30vh;
+    }
+}
+
+
+/* <!-- about --> */
+
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.about h1{
+    font-size: 30px;
+}
+
+.about p{
+    font-size: 20px;
+}
+/* <!-- footer --> */
+.foot{
+    background: black;
+    padding-top: 20px;
+    margin-top: 35px;
+    text-align: center;
+    height: 10vh;
+
+}
